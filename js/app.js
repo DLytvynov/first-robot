@@ -55,8 +55,30 @@ window.onload = function () {
                 break;
         }
 
-        robot.style.left = x + 'px';
-        robot.style.top = y + 'px';
+        let screenW = document.documentElement.clientWidth;
+        let screenH = document.documentElement.clientHeight;
+
+        if (x > screenW - 200) {
+            robot.style.left = 0;
+        }
+        else if (x < 0) {
+            robot.style.left = (screenW - 200) + 'px';
+        }
+        else {
+            robot.style.left = x + 'px';
+        }
+
+        if (y > screenH - 200) {
+            robot.style.top = 0;
+        }
+        else if (y < 0) {
+            robot.style.top = (screenH - 200) + 'px';
+        }
+        else {
+            robot.style.top = y + 'px';
+        }
+
+
     }//go
 
 };
