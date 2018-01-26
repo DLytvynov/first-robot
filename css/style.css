@@ -1,0 +1,17 @@
+body{
+    background-color: red;
+    position: relative;
+}
+
+#img{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+#img img{
+    width: 200px;
+    height: 200px;
+}
