@@ -1,9 +1,9 @@
-body{
+body {
     background-color: red;
     position: relative;
 }
 
-#img{
+#img {
     width: 200px;
     height: 200px;
     text-align: center;
@@ -11,7 +11,33 @@ body{
     left: 10px;
     top: 10px;
 }
-#img img{
+
+#img img {
     width: 200px;
     height: 200px;
+}
+
+#mine{
+    position: absolute;
+    left: 50%;
+    top: 200px;
+    text-align: center;
+}
+
+#mine img {
+    width: 50px;
+    height: 50px;
+}
+
+#boom {
+    display: none;
+    position: absolute;
+    left: 30%;
+    top: 10px;
+    text-align: center;
+
+}
+
+#next{
+    display: none;
 }
